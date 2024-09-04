@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+$regular: 'Montserrat', sans-serif;
+$secondary: 'Barlow Condensed', sans-serif;
+
+
+#es-rc #es-rc-content {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    color: #000;
+    background: #fff;
+
+    * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: 'Montserrat', sans-serif;
+        color: #000;
+        margin: 0
+    }
+
+    p {
+        margin: 0;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    
+}
