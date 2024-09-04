@@ -89,6 +89,11 @@ $secondary: 'Barlow Condensed', sans-serif;
                 z-index: 2;
             }
 
+            &__packshot {
+                bottom: -11px;
+                left: -8px;
+            }
+
             &__container {
                 display: flex;
                 flex-direction: row;
@@ -104,14 +109,130 @@ $secondary: 'Barlow Condensed', sans-serif;
                 font-size: 28px;
             }
         }
+
         @media (min-width: 882px) {
             &__headline {
                 font-size: 32px;
             }
         }
+
         @media (min-width: 992px) {
             &__headline {
                 font-size: 36px;
+            }
+        }
+    }
+
+    .es-header {
+        font-family: $secondary;
+        font-weight: 400;
+        text-align: center;
+        font-size: 32px;
+        padding: 1.5em;
+        background-color: #FBC1C2;
+        background-image: url("../images/items-2.png");
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+
+        span {
+            font-weight: 700;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 44px;
+        }
+    }
+
+    .es-features {
+        background-color: #C55E71;
+        color: #FFF;
+
+        &__square {
+            aspect-ratio: 1/1;
+            justify-content: center;
+        }
+
+        &__square--1,
+        &__square--4 {
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        &__text--top {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        &__text--big {
+            font-size: 50px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        @media (min-width: 576px) {
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            &__square {
+                width: 50%;
+            }
+
+            &__square--1 {
+                order: 1;
+            }
+
+            &__square--2 {
+                order: 2;
+            }
+
+            &__square--3 {
+                order: 3;
+            }
+
+            &__square--4 {
+                order: 4;
+            }
+
+        }
+
+        @media (min-width: 576px) and (max-width: 767px) {
+            &__text--top {
+                font-size: 22px;
+            }
+
+            &__text--big {
+                font-size: 38px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            &__text--top {
+                font-size: 29px;
+            }
+
+            &__text--big {
+                font-size: 50px;
+            }
+        }
+
+        @media (min-width: 882px) {
+            &__text--top {
+                font-size: 36px;
+            }
+
+            &__text--big {
+                font-size: 58px;
             }
         }
     }

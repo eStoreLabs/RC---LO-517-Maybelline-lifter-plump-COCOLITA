@@ -70,6 +70,10 @@
     right: 40px;
     z-index: 2;
   }
+  #es-rc #es-rc-content .es-kv__packshot {
+    bottom: -11px;
+    left: -8px;
+  }
   #es-rc #es-rc-content .es-kv__container {
     display: flex;
     flex-direction: row;
@@ -91,5 +95,99 @@
 @media (min-width: 992px) {
   #es-rc #es-rc-content .es-kv__headline {
     font-size: 36px;
+  }
+}
+#es-rc #es-rc-content .es-header {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 32px;
+  padding: 1.5em;
+  background-color: #FBC1C2;
+  background-image: url("../images/items-2.png");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+#es-rc #es-rc-content .es-header span {
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-header {
+    font-size: 44px;
+  }
+}
+#es-rc #es-rc-content .es-features {
+  background-color: #C55E71;
+  color: #FFF;
+}
+#es-rc #es-rc-content .es-features__square {
+  aspect-ratio: 1/1;
+  justify-content: center;
+}
+#es-rc #es-rc-content .es-features__square--1, #es-rc #es-rc-content .es-features__square--4 {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+#es-rc #es-rc-content .es-features__text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#es-rc #es-rc-content .es-features__text--top {
+  font-size: 32px;
+  font-weight: 700;
+}
+#es-rc #es-rc-content .es-features__text--big {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #es-rc #es-rc-content .es-features__square {
+    width: 50%;
+  }
+  #es-rc #es-rc-content .es-features__square--1 {
+    order: 1;
+  }
+  #es-rc #es-rc-content .es-features__square--2 {
+    order: 2;
+  }
+  #es-rc #es-rc-content .es-features__square--3 {
+    order: 3;
+  }
+  #es-rc #es-rc-content .es-features__square--4 {
+    order: 4;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  #es-rc #es-rc-content .es-features__text--top {
+    font-size: 22px;
+  }
+  #es-rc #es-rc-content .es-features__text--big {
+    font-size: 38px;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-features__text--top {
+    font-size: 29px;
+  }
+  #es-rc #es-rc-content .es-features__text--big {
+    font-size: 50px;
+  }
+}
+@media (min-width: 882px) {
+  #es-rc #es-rc-content .es-features__text--top {
+    font-size: 36px;
+  }
+  #es-rc #es-rc-content .es-features__text--big {
+    font-size: 58px;
   }
 }/*# sourceMappingURL=styles.css.map */
