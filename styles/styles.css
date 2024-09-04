@@ -21,18 +21,12 @@
   /**************************************/
   /********** effects styles ************/
   /**************************************/
+  /**************************************/
+  /*********** colors styles ************/
+  /**************************************/
 }
 #es-rc #es-rc-content * {
   box-sizing: border-box;
-}
-#es-rc #es-rc-content h1,
-#es-rc #es-rc-content h2,
-#es-rc #es-rc-content h3,
-#es-rc #es-rc-content h4,
-#es-rc #es-rc-content h5 {
-  font-family: "Montserrat", sans-serif;
-  color: #000;
-  margin: 0;
 }
 #es-rc #es-rc-content p {
   margin: 0;
@@ -41,6 +35,15 @@
   max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+#es-rc #es-rc-content .es-title {
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+  font-size: 34px;
+}
+#es-rc #es-rc-content .es-title span {
+  font-weight: 700;
 }
 #es-rc #es-rc-content .es-kv__logo {
   background: #000;
@@ -232,5 +235,95 @@
   }
   #es-rc #es-rc-content .es-effects__text {
     font-size: 40px;
+  }
+}
+#es-rc #es-rc-content .es-colors {
+  padding-block: 50px;
+  background-color: #FBC1C2;
+}
+#es-rc #es-rc-content .es-colors__container {
+  margin-top: 32px;
+}
+#es-rc #es-rc-content .es-colors__single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 215px;
+}
+#es-rc #es-rc-content .es-colors__product {
+  z-index: 2;
+  padding-right: 10px;
+  margin-left: -2px;
+}
+#es-rc #es-rc-content .es-colors__color-lips {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: -20px;
+  z-index: 1;
+  padding-top: 32px;
+  width: 100%;
+}
+#es-rc #es-rc-content .es-colors__single a {
+  text-decoration: none;
+}
+#es-rc #es-rc-content .es-colors__single .es-colors__photo {
+  transition: all 0.3s ease-in-out;
+}
+#es-rc #es-rc-content .es-colors__single:hover .es-colors__photo {
+  scale: 1.1;
+}
+#es-rc #es-rc-content .es-colors__single:hover .es-colors__CTA {
+  background-color: #FFF;
+  color: #000;
+  box-shadow: inset 0px 0px 0px 2px #000;
+}
+#es-rc #es-rc-content .es-colors__text {
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+#es-rc #es-rc-content .es-colors__CTA {
+  background-color: #000;
+  color: #FFF;
+  width: 100%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+#es-rc #es-rc-content .es-colors__color-lips--1 {
+  background-color: #FD8494;
+}
+#es-rc #es-rc-content .es-colors__color-lips--2 {
+  background-color: #CD5451;
+}
+#es-rc #es-rc-content .es-colors__color-lips--3 {
+  background-color: #F44168;
+}
+#es-rc #es-rc-content .es-colors__color-lips--4 {
+  background-color: #9F5A54;
+}
+#es-rc #es-rc-content .es-colors__color-lips--5 {
+  background-color: #F5A462;
+}
+#es-rc #es-rc-content .es-colors__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-colors__single {
+    max-width: 150px;
   }
 }/*# sourceMappingURL=styles.css.map */
