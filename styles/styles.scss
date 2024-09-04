@@ -41,6 +41,9 @@ $secondary: 'Barlow Condensed', sans-serif;
         margin: 0 auto;
     }
 
+    /**************************************/
+    /************* kv styles **************/
+    /**************************************/
     .es-kv {
         &__logo {
             background: #000;
@@ -123,6 +126,9 @@ $secondary: 'Barlow Condensed', sans-serif;
         }
     }
 
+    /**************************************/
+    /*********** header styles ************/
+    /**************************************/
     .es-header {
         font-family: $secondary;
         font-weight: 400;
@@ -144,6 +150,9 @@ $secondary: 'Barlow Condensed', sans-serif;
         }
     }
 
+    /**************************************/
+    /********** features styles ***********/
+    /**************************************/
     .es-features {
         background-color: #C55E71;
         color: #FFF;
@@ -233,6 +242,39 @@ $secondary: 'Barlow Condensed', sans-serif;
 
             &__text--big {
                 font-size: 58px;
+            }
+        }
+    }
+
+    /**************************************/
+    /********** effects styles ************/
+    /**************************************/
+    .es-effects {
+        background-color: rgb(197, 94, 113);
+        background-image: url("../images/elements-1.png"), linear-gradient(11deg, rgba(197, 94, 113, 1) 0%, rgba(246, 194, 198, 1) 50%, rgba(197, 94, 113, 1) 100%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        &__text {
+            font-family: $secondary;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 32px;
+            padding-block: 32px;
+            padding-inline: 16px;
+            span {
+                font-weight: 700;
+            }
+        }
+        @media (min-width: 576px) {
+            background-position: left;
+            background-size: contain;
+            &__BA {
+                max-width: 55%;
+                margin-left: auto;
+            }
+            &__text {
+                font-size: 40px;
             }
         }
     }

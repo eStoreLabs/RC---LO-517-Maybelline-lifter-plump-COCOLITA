@@ -9,6 +9,18 @@
   overflow: hidden;
   color: #000;
   background: #fff;
+  /**************************************/
+  /************* kv styles **************/
+  /**************************************/
+  /**************************************/
+  /*********** header styles ************/
+  /**************************************/
+  /**************************************/
+  /********** features styles ***********/
+  /**************************************/
+  /**************************************/
+  /********** effects styles ************/
+  /**************************************/
 }
 #es-rc #es-rc-content * {
   box-sizing: border-box;
@@ -189,5 +201,36 @@
   }
   #es-rc #es-rc-content .es-features__text--big {
     font-size: 58px;
+  }
+}
+#es-rc #es-rc-content .es-effects {
+  background-color: rgb(197, 94, 113);
+  background-image: url("../images/elements-1.png"), linear-gradient(11deg, rgb(197, 94, 113) 0%, rgb(246, 194, 198) 50%, rgb(197, 94, 113) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+#es-rc #es-rc-content .es-effects__text {
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  padding-block: 32px;
+  padding-inline: 16px;
+}
+#es-rc #es-rc-content .es-effects__text span {
+  font-weight: 700;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-effects {
+    background-position: left;
+    background-size: contain;
+  }
+  #es-rc #es-rc-content .es-effects__BA {
+    max-width: 55%;
+    margin-left: auto;
+  }
+  #es-rc #es-rc-content .es-effects__text {
+    font-size: 40px;
   }
 }/*# sourceMappingURL=styles.css.map */
