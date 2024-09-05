@@ -256,6 +256,7 @@ $secondary: 'Barlow Condensed', sans-serif;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right;
+        background-attachment: fixed;
 
         &__text {
             font-family: $secondary;
@@ -390,8 +391,82 @@ $secondary: 'Barlow Condensed', sans-serif;
         }
 
         @media (min-width: 576px) {
+            &__container {
+                position: relative;
+            }
+            &__container::after {
+                content: "";
+                background-image: url("../images/pepper.png");
+                background-size: contain;
+                width: 100px;
+                height: 200px;
+                position: absolute;
+                bottom: -100px;
+                left: 3%;
+                z-index: 1;
+            }
             &__single {
                 max-width: 150px;
+            }
+        }
+        @media (min-width: 768px) {
+            &__container::after {
+                left: 1%;
+            }
+        }
+    }
+
+    /**************************************/
+    /******* comparison styles ************/
+    /**************************************/
+    .es-compare {
+        background: linear-gradient(90deg, rgba(246, 194, 198, 1) 0%, rgba(240, 181, 185, 1) 25%, rgba(218, 135, 145, 1) 50%, rgba(199, 98, 114, 1) 75%, rgba(197, 94, 113, 1) 100%);
+        color: #FFF;
+        padding-block: 32px;
+        position: relative;
+        &:after {
+            content: "";
+            background-image: url("../images/pepper-2.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 40px;
+            height: 170px;
+            position: absolute;
+            bottom: -23px;
+            right: 0;
+        }
+        .es-colors__CTA {
+            display: block;
+            margin-top: 16px;
+            width: 45%;
+            max-width: 200px;
+            transform: translate(-25%, 0);
+            margin-left: 15%;
+        }
+        .es-colors__CTA:hover {
+            background-color: #FFF;
+            color: #000;
+            box-shadow: inset 0px 0px 0px 2px #000;
+        }
+        @media (min-width: 576px) {
+            position: relative;
+            &:after {
+                width: 50px;
+                height: 200px;
+            }
+            .es-title {
+                margin-bottom: -32px;
+                position: relative;
+                z-index: 1;
+            }
+        }
+        @media (min-width: 768px) {
+            &:after {
+                width: 70px;
+                height: 270px;
+            }
+            .es-title {
+                margin-bottom: -48px;
             }
         }
     }

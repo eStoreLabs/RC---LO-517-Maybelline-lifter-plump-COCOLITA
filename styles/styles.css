@@ -24,6 +24,9 @@
   /**************************************/
   /*********** colors styles ************/
   /**************************************/
+  /**************************************/
+  /******* comparison styles ************/
+  /**************************************/
 }
 #es-rc #es-rc-content * {
   box-sizing: border-box;
@@ -212,6 +215,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+  background-attachment: fixed;
 }
 #es-rc #es-rc-content .es-effects__text {
   font-family: "Barlow Condensed", sans-serif;
@@ -323,7 +327,79 @@
   flex-wrap: wrap;
 }
 @media (min-width: 576px) {
+  #es-rc #es-rc-content .es-colors__container {
+    position: relative;
+  }
+  #es-rc #es-rc-content .es-colors__container::after {
+    content: "";
+    background-image: url("../images/pepper.png");
+    background-size: contain;
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    bottom: -100px;
+    left: 3%;
+    z-index: 1;
+  }
   #es-rc #es-rc-content .es-colors__single {
     max-width: 150px;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-colors__container::after {
+    left: 1%;
+  }
+}
+#es-rc #es-rc-content .es-compare {
+  background: linear-gradient(90deg, rgb(246, 194, 198) 0%, rgb(240, 181, 185) 25%, rgb(218, 135, 145) 50%, rgb(199, 98, 114) 75%, rgb(197, 94, 113) 100%);
+  color: #FFF;
+  padding-block: 32px;
+  position: relative;
+}
+#es-rc #es-rc-content .es-compare:after {
+  content: "";
+  background-image: url("../images/pepper-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 170px;
+  position: absolute;
+  bottom: -23px;
+  right: 0;
+}
+#es-rc #es-rc-content .es-compare .es-colors__CTA {
+  display: block;
+  margin-top: 16px;
+  width: 45%;
+  max-width: 200px;
+  transform: translate(-25%, 0);
+  margin-left: 15%;
+}
+#es-rc #es-rc-content .es-compare .es-colors__CTA:hover {
+  background-color: #FFF;
+  color: #000;
+  box-shadow: inset 0px 0px 0px 2px #000;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content .es-compare {
+    position: relative;
+  }
+  #es-rc #es-rc-content .es-compare:after {
+    width: 50px;
+    height: 200px;
+  }
+  #es-rc #es-rc-content .es-compare .es-title {
+    margin-bottom: -32px;
+    position: relative;
+    z-index: 1;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-compare:after {
+    width: 70px;
+    height: 270px;
+  }
+  #es-rc #es-rc-content .es-compare .es-title {
+    margin-bottom: -48px;
   }
 }/*# sourceMappingURL=styles.css.map */
